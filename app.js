@@ -1,32 +1,19 @@
-var numberInshape =1;
-var oldValue = 0;
-let button = document.getElementById("button");
+let numberInShape = 1;
 
-button.onclick = () => {
-    let n= document.getElementById("number").value;
-    let circle=document.getElementById("circle");
-    let square=document.getElementById("square");
-    let rectangle=document.getElementById("rectangle");
+document.getElementById("button").onclick = () => {
+    let count = parseInt(document.getElementById("number").value);
+    const box = document.getElementById("box");
+    const shapeType = document.querySelector('input[name="choice"]:checked').value;
 
-    let box = document.getElementById("box");
-
-    let j;
-    n=Number(oldValue)+Number(n);
-    for(j=numberInshape; j<=n;j++)
-    {
-        var shape = document.createElement("div");
-        shape.innerHTML += numberInshape;
-        if(square.checked)
-            shape.classList.add("square");
-        else if(circle.checked)
-            shape.classList.add("circle");
-        else if(rectangle.checked)
-            shape.classList.add("rectangle");
-        else
-        document.write("Invalid Input");
-    box.appendChild(shape);
-    numberInshape++;
-    oldValue = document.getElementById("box").lastElementChild.innerHTML;
+    if (isNaN(count) || count <= 0) {
+        alert("Please enter a valid number greater than 0");
+        return;
     }
 
-}
+    for (let i = 0; i < count; i++) {
+        const shape = document.createElement("div");
+        shape.classList.add(shapeType);
+        shape.textContent = numberInShape++;
+        box.appendChild(shape);
+    }
+};

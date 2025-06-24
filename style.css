@@ -1,10 +1,12 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#input{
-    background-color: rgb(85, 98, 218);
+
+#input {
+ 
+    background: linear-gradient(to right, rgb(237, 90, 32), rgb(89, 84, 255));
     width: 100vw;
     height: 50vw;
     font-weight: 700;
@@ -13,66 +15,61 @@
     align-items: center;
     justify-content: center;
 }
-h1{
-    font-size: 3em;
 
+h1 {
+    font-size: 3em;
 }
-#number{
+
+#number {
     width: 150px;
     height: 40px;
     font-size: 1.5em;
     padding: 0px 10px;
 }
-#button{
+
+#button {
     width: 100px;
     height: 40px;
     font-size: 1.2em;
-    background-color:green;
+    background-color: green;
     color: bisque;
+    cursor: pointer;
 }
-.square{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(142, 32, 92);
-    color:honeydew;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 10px;
-    text-align: center;
-    position: inherit;
-}
-.rectangle{
-    height: 50px;
-    width: 100px;
-    background-color: rgb(255, 30, 30);
-    color:honeydew;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 10px;
-    text-align: center;
-    position: inherit;
-}
+
+.square,
+.rectangle,
 .circle {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(35, 34, 25);
     color: honeydew;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     text-align: center;
-    border-radius: 50%; 
+    font-weight: bold;
 }
-.box{
-    display:flex;
-    flex-direction: row wrap;
-    position: absolute;
-    margin: 10px;
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(199, 46, 130);
+}
+
+.rectangle {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(235, 10, 10);
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(23, 112, 36);
+    border-radius: 50%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
 }
