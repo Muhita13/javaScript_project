@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#input{
+    background-color: rgb(85, 98, 218);
+    width: 100vw;
+    height: 50vw;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 3em;
+
+}
+#number{
+    width: 150px;
+    height: 40px;
+    font-size: 1.5em;
+    padding: 0px 10px;
+}
+#button{
+    width: 100px;
+    height: 40px;
+    font-size: 1.2em;
+    background-color:green;
+    color: bisque;
+}
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(142, 32, 92);
+    color:honeydew;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    text-align: center;
+    position: inherit;
+}
+.rectangle{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(255, 30, 30);
+    color:honeydew;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    text-align: center;
+    position: inherit;
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(35, 34, 25);
+    color: honeydew;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    border-radius: 50%; 
+}
+.box{
+    display:flex;
+    flex-direction: row wrap;
+    position: absolute;
+    margin: 10px;
+}
